@@ -1,0 +1,24 @@
+{
+  "rules": {
+    "no-console": 1,
+    "indent": [2, 2],
+    "quotes": [2, "single"],
+    "linebreak-style": [2, "unix"],
+    "semi": [2, "always"],
+    "space-before-function-paren": [2, "never"]
+  },
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "ecmaFeatures": {
+    "modules": true,
+    "blockBindings": true,
+    "templateStrings": true,
+    "spread": true,
+    "generators": true,
+    "objectLiteralShorthandMethods": true,
+    "arrowFunctions": true
+  },
+  "extends": "eslint:recommended"
+}
