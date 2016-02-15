@@ -6,11 +6,15 @@ const adaptor = require('microservice-adaptor');
 const fc = require('./fc');
 
 
+const ping = new adaptor(fc);
+
 net
   .createServer((serverSocket) => {
     console.log('s onConnect');
     serverSocket
-      .pipe(new adaptor(fc))
+      .pipe(ping)
       .pipe(serverSocket);
   })
-  .listen(8001, () => {console.log('ping microservice started');});
+  .listen(8001, () => {
+    console.log('ping microservice started');
+  });
