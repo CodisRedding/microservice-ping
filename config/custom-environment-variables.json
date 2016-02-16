@@ -1,0 +1,4 @@
+{
+  "port": "MICROSERVICE_PING_TEST_PORT",
+  "host": "MICROSERVICE_PING_TEST_HOST"
+}

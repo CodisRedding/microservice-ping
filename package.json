@@ -10,5 +10,9 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^2.1.0"
+  },
+  "dependencies": {
+    "config": "^1.19.0",
+    "service-adapter": "0.0.4"
   }
 }
