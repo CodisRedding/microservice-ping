@@ -7,13 +7,11 @@ const config = require('config');
 const api = require('./api');
 
 
-const ping = new adaptor(api.ping);
-
 net
   .createServer((serverSocket) => {
     console.log('s onConnect');
     serverSocket
-      .pipe(ping)
+      .pipe(new adaptor(api.ping))
       .pipe(serverSocket);
   })
   .listen(config.get('port'), config.get('host'), (err) => {
@@ -23,5 +21,5 @@ net
     }
 
     // TODO: logging service
-    console.log(`[PING microservice] - started on worker #${cluster.worker.id}`);
+    console.log('[PING microservice] - started on port', config.get('host') + ':' + config.get('port'));
   });
