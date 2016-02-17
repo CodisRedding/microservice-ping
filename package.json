@@ -9,7 +9,9 @@
   "author": "Rocky Assad <rocky.assad@premisehealth.com>",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^2.1.0"
+    "code": "^2.1.0",
+    "eslint": "^2.1.0",
+    "lab": "^8.2.0"
   },
   "dependencies": {
     "config": "^1.19.0",
