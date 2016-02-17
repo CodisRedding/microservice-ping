@@ -4,7 +4,13 @@
   "description": "Microservice ping test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "lab -L -t 95 -r lcov -o ./test/artifacts/coverage.lcov",
+    "test": "lab",
+    "test-verbose": "lab -v",
+    "lint": "lab -L",
+    "cover": "lab -c",
+    "all-the-things": "lab -vLc",
+    "all-the-things-html": "lab -cLv -r html -o ./test/artifacts/coverage.html; open ./test/artifacts/coverage.html"
   },
   "author": "Rocky Assad <rocky.assad@premisehealth.com>",
   "license": "ISC",

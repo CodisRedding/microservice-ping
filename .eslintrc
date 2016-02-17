@@ -9,8 +9,7 @@
   },
   "env": {
     "node": true,
-    "mocha": true,
-    "esnext": true
+    "mocha": true
   },
   "ecmaFeatures": {
     "modules": true,
